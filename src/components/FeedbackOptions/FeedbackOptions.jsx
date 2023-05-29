@@ -6,7 +6,6 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
     <ButtonList>
       {options.map((option, index) => {
         const label = option.charAt(0).toUpperCase() + option.slice(1);
-
         return (
           <ButtonItem key={index}>
             <Button type="button" onClick={() => onLeaveFeedback(option)}>
